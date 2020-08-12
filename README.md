@@ -1,2 +1,3 @@
 # FlexiDCGAN
-A flexible DCGAN architecture for any square image.
+
+FlexiDCGAN is a flexible DCGAN. It takes the image size (side of a square image, like 28 in 28x28 images), the number of image channels, and the dimension of the latent variables depending on your purposes. The DCGAN architecture assumes the latents of the discriminator is always 1 (denoting real or fake). Though this can be easily adjusted by defining your own model, similar to how DCGAN is defined, but with a different latent dim for the discriminator. The algorithm for constructing the architecture automatically is actually pretty simple, so I'm thinking about adding a feature multiplier (easy) and a size multiplier (may not be easy).
